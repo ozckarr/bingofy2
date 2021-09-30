@@ -32,10 +32,7 @@ export default function Post() {
             {postData &&
               postData.map((post, index) => (
                 <article key={index} className="postList">
-                  <Link
-                    to={"/post/" + post.slug.current}
-                    key={post.slug.current}
-                  >
+                  <Link to={"/" + post.slug.current} key={post.slug.current}>
                     <span>
                       <img
                         src={post.mainImage.asset.url}
